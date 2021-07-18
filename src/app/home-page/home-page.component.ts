@@ -13,8 +13,8 @@ export class HomePageComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  navigateToPage() {
-    this.router.navigate(['new-order']);
+  navigateToPage(path: string) {
+    this.router.navigateByUrl(path);
   }
 
 }

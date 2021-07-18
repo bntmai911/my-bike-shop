@@ -4,17 +4,17 @@
     <mat-drawer #drawer mode="side" style="width: 250px;">
       <mat-list>
         <mat-list-item class="header"></mat-list-item>
-        <mat-list-item [disableRipple]="false" class="active menu-item">
+        <mat-list-item [disableRipple]="false" class="active menu-item" (click)="navigateToPage('/')">
           <mat-icon class="me-3">home</mat-icon>
           Trang chủ
         </mat-list-item>
-        <mat-list-item [disableRipple]="false" class="menu-item">
+        <mat-list-item [disableRipple]="false" class="menu-item" (click)="navigateToPage('/new-order')">
           <mat-icon class="me-3">shopping_cart</mat-icon>Tạo đơn hàng mới
         </mat-list-item>
-        <mat-list-item class="menu-item">
+        <mat-list-item class="menu-item" (click)="navigateToPage('/finance')">
           <mat-icon class="me-3">list</mat-icon>Tình hình tài chính
         </mat-list-item>
-        <mat-list-item class="menu-item">
+        <mat-list-item class="menu-item" (click)="navigateToPage('/manage-store')">
           <mat-icon class="me-3">store</mat-icon>Quản lý kho
         </mat-list-item>
       </mat-list>
