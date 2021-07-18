@@ -1,0 +1,22 @@
+.select-card {
+    max-width: 400px;
+    min-height: 200px;
+    padding: 50px;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 1.5;
+    position: relative;
+    cursor: pointer;
+    background-color: #b2dfdb;
+    transition: .5s ease;
+    p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.select-card:hover {
+    opacity: 0.3;
+}
